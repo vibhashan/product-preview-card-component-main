@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+}
+
+h4 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+/* Mobile-first design approach. */
+
+#perfume-image {
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.container {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-main {
+  background: hsl(0, 0%, 100%);
+  padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#section-main__perfume {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 500;
+}
+
+#section-main__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+#section-main__price--new {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+#section-main__price--old {
+  text-decoration: line-through;
+}
+
+#section-main__button {
+  margin-top: 0.5rem;
+  border: none;
+  background: hsl(158, 36%, 37%);
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#section-main__button--text,
+#section-main__button--text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}

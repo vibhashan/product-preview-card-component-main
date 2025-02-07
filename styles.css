@@ -21,6 +21,13 @@ body {
   background: hsl(30, 38%, 92%);
 }
 
+main {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
@@ -40,16 +47,17 @@ h4 {
 
 /* Mobile-first design approach. */
 
-#perfume-image {
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#perfume-image-container img {
+  content: url("images/image-product-mobile.jpg");
+  display: block;
   width: 100%;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
-}
-
-.container {
-  margin: 2rem 1rem 2rem 1rem;
-  display: flex;
-  flex-direction: column;
 }
 
 #section-main {
@@ -109,4 +117,33 @@ h4 {
   gap: 0.75rem;
   color: white;
   font-weight: 550;
+}
+
+@media (min-width: 75rem) {
+  main {
+    margin: auto;
+    max-width: 50vw;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #perfume-image-container {
+    width: 50%;
+  }
+
+  #perfume-image-container img {
+    content: url("images/image-product-desktop.jpg");
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0rem;
+  }
+
+  #section-main {
+    width: 50%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0rem;
+    padding: 2rem;
+  }
 }
